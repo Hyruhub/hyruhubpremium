@@ -1,3 +1,18 @@
+password = "w-whare-MN8P5-WX7Z7-5J4N"
+
+for i in range(3)
+    mat_khau = input("Key script)
+    so_lan = 3
+    if (mat_khau == password):
+        print("key success")
+	break
+    else:
+	print("Key invalid",solan - i)
+	continue
+while mat_khau != password
+    count +=1
+    if count > 3
+	print("Invalid")		
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
