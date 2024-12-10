@@ -12,6 +12,22 @@ local Window = Fluent:CreateWindow({
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
     Theme = "dark black",
     MinimizeKey = Enum.KeyCode.End -- Used when theres no MinimizeKeybind
+		local playAnim = char.Humanoid:LoadAnimation(slideAnim)
+playAnim:Play()
+
+
+local slide = Instance.new("BodyVelocity")
+slide.MaxForce = Vector3.new(1,0,1) * 30000
+slide.Velocity = char.HumanoidRootPart.CFrame.lookVector * 100
+slide.Parent = char.HumanoidRootPart
+
+for count = 1, 8 do
+  wait(.1)
+  slide.Velocity *= .7
+end
+playAnim:Stop()
+slide:Destroy()
+canslide = true
 })
 local Tabs = {
     Main = Window:AddTab({ Title = "Tab Farm", Icon = "home" }),
