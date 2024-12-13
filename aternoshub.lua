@@ -2,13 +2,11 @@ hilocal Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluen
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 --------------------------------------------------------------------------------------------------------------------------------------------
-local Window = Fluent:CreateWindow({
-local = "aternos hub thành công"	
-	Avatar = "Dog"	
+local Window = Fluent:CreateWindow({	
     Title = "aternos Hub",
                     SubTitle = "Free Script",
     TabWidth = 120,
-    Size = UDim2.fromOffset(430, 350),
+    Size = UDim2.fromOffset(430, 330),
     Acrylic = True, -- The blur may be detectable, setting this to false disables blur entirely
     Theme = "Pure white",
     MinimizeKey = Enum.KeyCode.End -- Used when theres no MinimizeKeybind
