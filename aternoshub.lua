@@ -3,26 +3,26 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/d
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 --------------------------------------------------------------------------------------------------------------------------------------------
 local Window = Fluent:CreateWindow({
-    Title = "W-AzuCat Hub",
-    SubTitle = "By Nicoo exe",
-    TabWidth = 160,
-    Size = UDim2.fromOffset(530, 350),
-    Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
-    Theme = "dark black",
+    Title = "aternos Hub",
+                    SubTitle = "join discord https://discord.gg/zceCQTkY",
+    TabWidth = 110,
+    Size = UDim2.fromOffset(430, 230),
+    Acrylic = false, -- The blur may be detectable, setting this to false disables blur entirely
+    Theme = "Pure white",
     MinimizeKey = Enum.KeyCode.End -- Used when theres no MinimizeKeybind
 })
 local Tabs = {
     Main = Window:AddTab({ Title = "Tab Farm", Icon = "home" }),
-    Setting = Window:AddTab({ Title = "Tab Setting", Icon = "settings" }),
-    Stats = Window:AddTab({ Title = "Tab Stats", Icon = "plus-circle" }),
-    Player = Window:AddTab({ Title = "Tab Player", Icon = "baby" }),
-    Teleport = Window:AddTab({ Title = "Tab Travel", Icon = "palmtree" }),
-    Fruit = Window:AddTab({ Title = "Tab Devil Fruit", Icon = "cherry" }),
+    Setting = Window:AddTab({ Title = "Tab Setting", Icon = "No" }),
+    Stats = Window:AddTab({ Title = "Tab Stats", Icon = "No" }),
+    Player = Window:AddTab({ Title = "Tab Player", Icon = "No" }),
+    Teleport = Window:AddTab({ Title = "Tab Travel", Icon = "No" }),
+    Fruit = Window:AddTab({ Title = "Tab Devil Fruit", Icon = "No" }),
     Raid = Window:AddTab({ Title = "Tab Raid", Icon = "swords" }),
-    Race = Window:AddTab({ Title = "Tab Race V4", Icon = "chevrons-right" }),
-    Shop = Window:AddTab({ Title = "Tab Buy Items", Icon = "shopping-cart" }),
-	Misc = Window:AddTab({ Title = "Tab Miscellaneous", Icon = "list-plus" }),
-    Hop = Window:AddTab({ Title = "Tab Hop", Icon = "wifi" }),
+    Race = Window:AddTab({ Title = "Tab Race V4", Icon = "No" }),
+    Shop = Window:AddTab({ Title = "Tab Buy Items", Icon = "No" }),
+	Misc = Window:AddTab({ Title = "Tab Miscellaneous", Icon = "No" }),
+    Hop = Window:AddTab({ Title = "Tab Hop", Icon = "No" }),
 }
 local Options = Fluent.Options
 do
@@ -6224,7 +6224,7 @@ spawn(function()
         elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709143733" then
             Hop()
             Fluent:Notify({
-                Title = "W-AzuCat Hub",
+                Title = "aternos Hub",
                 Content = "Turn Off Find Full Moon...",
                 SubContent = "", -- Optional
                 Duration = 5 -- Set to nil to make the notification not disappear
@@ -6232,7 +6232,7 @@ spawn(function()
         elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709150401" then
             Hop()
             Fluent:Notify({
-                Title = "W-AzuCat Hub",
+                Title = "aternos Hub",
                 Content = "Hop...",
                 SubContent = "", -- Optional
                 Duration = 5 -- Set to nil to make the notification not disappear
@@ -6240,7 +6240,7 @@ spawn(function()
         elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149680" then
             Hop()
             Fluent:Notify({
-                Title = "W-AzuCat Hub",
+                Title = "aternos Hub",
                 Content = "Hop...",
                 SubContent = "", -- Optional
                 Duration = 5 -- Set to nil to make the notification not disappear
