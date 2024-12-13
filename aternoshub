@@ -1,0 +1,7 @@
+Config = {
+  namescript = "aternos Hub"
+  logoscript = "5009915812"
+  tacgia = "Nicooo"
+  }
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/Hyruhub/hyruhubpremium/refs/heads/main/aternoshub.lua"))()
+  
