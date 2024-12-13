@@ -5,9 +5,9 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
 local Window = Fluent:CreateWindow({
     Title = "aternos Hub",
                     SubTitle = "join discord https://discord.gg/zceCQTkY",
-    TabWidth = 110,
-    Size = UDim2.fromOffset(430, 230),
-    Acrylic = false, -- The blur may be detectable, setting this to false disables blur entirely
+    TabWidth = 120,
+    Size = UDim2.fromOffset(430, 350),
+    Acrylic = True, -- The blur may be detectable, setting this to false disables blur entirely
     Theme = "Pure white",
     MinimizeKey = Enum.KeyCode.End -- Used when theres no MinimizeKeybind
 })
@@ -2004,7 +2004,7 @@ end
   function Tween2(P1)
     local Distance = (P1.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
     if Distance >= 1 then
-    Speed = 300
+    Speed = 350
     end
     game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart,TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear), {
       CFrame = P1
@@ -6271,7 +6271,7 @@ spawn(function()
             end
         end
     end
+end		
 end)
-end
-
+title = "Con Cac Du Ma"
 ------------------------------------------------------------------------------------------------------------------------------------------
